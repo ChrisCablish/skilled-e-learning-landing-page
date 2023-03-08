@@ -1,5 +1,8 @@
 * {
     font-family: 'Plus Jakarta Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 button {
@@ -10,6 +13,25 @@ button {
     border: none;
 }
 
+/* HEADER */
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .skilled__logo {
+    background-image: url(../starter-code/assets/logo-dark.svg);
+    width: 89px;
+    height: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+/* INTRO */
+
 .intro h1 {
     font-size: 40px;
     line-height: 51 px;
@@ -18,18 +40,50 @@ button {
 .intro p {
     font-size: 1rem;
     line-height: 28px;
-}     
+}  
 
-.stats span {
-    font-size: 14px;
+/* HERO */
+
+
+.hero__image {
+    background-image: url("../starter-code/assets/image-hero-mobile@2x.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+    height: 301px;
+    width: 327px;
 }
 
-.stats h2 {
-    font-size: 2rem;
-}
+/* TOPICS */
 
 .topic__header h3 {
     font-size: 24px;
+}
+
+.icon {
+    height: 56px;
+    width: 56px;
+
+}
+
+.animation {
+    background-image: url(../starter-code/assets/icon-animation.svg);
+}
+
+.design {
+    background-image: url("../starter-code/assets/icon-design.svg");
+}
+
+.photography {
+    background-image: url("../starter-code/assets/icon-photography.svg");
+}
+
+.crypto {
+    background-image: url("../starter-code/assets/icon-crypto.svg");
+}
+
+.business {
+    background-image: url("../starter-code/assets/icon-business.svg");
 }
 
 .topic__section h4 {
@@ -40,6 +94,6 @@ button {
     font-size: 1rem;
 }
 
-.topic__section A {
+.topic__section a {
     font-size: 18px;
 }
