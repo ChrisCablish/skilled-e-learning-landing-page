@@ -1,0 +1,45 @@
+* {
+    font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+button {
+    font-size: 16px;
+    line-height: 28px;
+    padding: 9px 24px 11px 24px;
+    border-radius: 1.5rem;
+    border: none;
+}
+
+.intro h1 {
+    font-size: 40px;
+    line-height: 51 px;
+}
+
+.intro p {
+    font-size: 1rem;
+    line-height: 28px;
+}     
+
+.stats span {
+    font-size: 14px;
+}
+
+.stats h2 {
+    font-size: 2rem;
+}
+
+.topic__header h3 {
+    font-size: 24px;
+}
+
+.topic__section h4 {
+    font-size: 20px;
+}
+
+.topic__section p {
+    font-size: 1rem;
+}
+
+.topic__section A {
+    font-size: 18px;
+}
