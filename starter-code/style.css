@@ -1,3 +1,8 @@
+:root {
+    --paragraphGrey: hsla(233, 10%, 56%, 1);
+    --anchorOrange: hsla(341, 92%, 62%, 1);
+}
+
 * {
     font-family: 'Plus Jakarta Sans', sans-serif;
     margin: 0;
@@ -8,9 +13,10 @@
 button {
     font-size: 16px;
     line-height: 28px;
-    padding: 9px 24px 11px 24px;
+    padding: 8px 24px 8px 24px;
     border-radius: 1.5rem;
     border: none;
+    font-weight: 700;
 }
 
 /* HEADER */
@@ -19,9 +25,10 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin: 1rem 1rem 0 1rem;
 }
 
-header .skilled__logo {
+header .skilled__logo__dark {
     background-image: url(../starter-code/assets/logo-dark.svg);
     width: 89px;
     height: 35px;
@@ -30,17 +37,34 @@ header .skilled__logo {
     background-size: contain;
 }
 
+header button {
+    background-color: black;
+    color: white;
+}
+
 /* INTRO */
 
+.intro {
+    margin: 38px 1rem 0 1rem;
+}
 .intro h1 {
     font-size: 40px;
     line-height: 51 px;
+    font-weight: 800;
 }
 
 .intro p {
     font-size: 1rem;
     line-height: 28px;
+    color: var(--paragraphGrey);
+    margin-top: 26px;
 }  
+
+.intro button {
+    background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    color: white;
+    margin-top: 1.5rem;
+}
 
 /* HERO */
 
@@ -49,15 +73,36 @@ header .skilled__logo {
     background-image: url("../starter-code/assets/image-hero-mobile@2x.webp");
     background-position: center;
     background-repeat: no-repeat;
-    background-size: contain;
-    height: 301px;
-    width: 327px;
+    background-size: 116%;
+    height: 327px;
+    width: 100%;
+    margin-top: 3.5rem;
 }
 
 /* TOPICS */
 
+.topics {
+    background-image: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
+    margin: 0 1rem;
+}
+
+
+.topic__header {
+    background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
+    color: white;
+    line-height: 2rem;
+    height: 120px;
+    padding: 2rem;
+    border-radius: 10px;
+}
+
 .topic__header h3 {
-    font-size: 24px;
+    font-size: 24px; 
+    font-weight: 800;
+}
+
+.topic__section {
+    background-color: white;
 }
 
 .icon {
@@ -65,6 +110,26 @@ header .skilled__logo {
     width: 56px;
 
 }
+
+.topic__section h4 {
+    font-weight: 800;
+    font-size: 20px;
+}
+
+.topic__section p {
+    font-size: 1rem;
+    line-height: 26px;
+    color: var(--paragraphGrey);
+}
+
+.topic__section a {
+    color: var(--anchorOrange);
+    font-size: 18px;
+    font-weight: 800;
+
+}
+
+/* TOPIC ICONS */
 
 .animation {
     background-image: url(../starter-code/assets/icon-animation.svg);
@@ -86,14 +151,30 @@ header .skilled__logo {
     background-image: url("../starter-code/assets/icon-business.svg");
 }
 
-.topic__section h4 {
-    font-size: 20px;
+/* FOOTER */
+
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    padding: 0 1rem;
+    
 }
 
-.topic__section p {
-    font-size: 1rem;
+footer .skilled__logo__white {
+    background-image: url(../starter-code/assets/logo-light.svg);
+    width: 89px;
+    height: 35px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
 }
 
-.topic__section a {
-    font-size: 18px;
+footer button {
+    background-image: linear-gradient(180deg, #4851FF 0%, #F02AA6 100%);
+    color: white;
 }
+
+
