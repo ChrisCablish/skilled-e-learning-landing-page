@@ -11,12 +11,16 @@
 }
 
 button {
-    font-size: 16px;
-    line-height: 28px;
-    padding: 8px 24px 8px 24px;
+    font-size: 1rem;
+    line-height: 1.75rem;
+    padding: 0.5rem 1.5rem 0.5rem 1.5rem;
     border-radius: 1.5rem;
     border: none;
     font-weight: 700;
+}
+
+body {
+    width: 100%;
 }
 
 /* HEADER */
@@ -30,8 +34,8 @@ header {
 
 header .skilled__logo__dark {
     background-image: url(../starter-code/assets/logo-dark.svg);
-    width: 89px;
-    height: 35px;
+    width: 5.5625rem;
+    height: 2.1875rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -69,7 +73,7 @@ header button {
 /* HERO */
 
 
-.hero__image {
+.hero__image__mobile {
     background-image: url("../starter-code/assets/image-hero-mobile@2x.webp");
     background-position: center;
     background-repeat: no-repeat;
@@ -77,6 +81,10 @@ header button {
     height: 327px;
     width: 100%;
     margin-top: 3.5rem;
+}
+
+.hero__image__tablet {
+    display: none;
 }
 
 /* TOPICS */
@@ -188,5 +196,68 @@ footer button {
     color: white;
     
 }
+
+/* TABLET */
+
+@media (min-width: 700px) {
+
+
+    .intro__and__hero {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+
+    .hero__image__mobile {
+        display: none;
+    }
+
+    .intro {
+        
+        margin: 99px 20rem 0 40px;;
+    }
+
+    .hero {
+        
+        
+        position: absolute;
+        right: -285px;
+        top: -140px;
+        overflow: hidden;
+    }
+
+    .hero__image__tablet {
+        object-fit: cover;
+        background-image: url("../starter-code/assets/image-hero-tablet@2x.webp");
+        background-repeat: no-repeat;
+        background-size: contain;
+        display: block;
+        height: 640px;
+        width: 640px;
+        
+    }
+
+    /* TOPICS */
+
+    .topics {
+        flex-direction: row;
+        flex-wrap:wrap;
+        gap: 10px;
+        justify-content: center;
+        margin-top: 8rem;
+        
+    }
+
+    .topic__section {
+        width: 340px;
+        height: 283px;
+        margin-top: 46px;
+    }
+
+    .topic__header h3 {
+        transform: translate(0, -80%);
+    }
+}
+
 
 
