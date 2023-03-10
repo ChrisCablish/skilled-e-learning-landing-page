@@ -1,3 +1,6 @@
+
+/* -------GLOBAL-------------- */
+
 :root {
     --paragraphGrey: hsla(233, 10%, 56%, 1);
     --anchorOrange: hsla(341, 92%, 62%, 1);
@@ -19,6 +22,8 @@ button {
     border: none;
     font-weight: 700;
 }
+
+/*---------MOBILE---------------/*
 
 /* HEADER */
 
@@ -46,19 +51,19 @@ header button {
 /* INTRO */
 
 .intro {
-    margin: 38px 1rem 0 1rem;
+    margin: 2.375rem 1rem 0 1rem;
 }
 .intro h1 {
-    font-size: 40px;
-    line-height: 51 px;
+    font-size: 2.5rem;
+    line-height: 3.1875rem;
     font-weight: 800;
 }
 
 .intro p {
     font-size: 1rem;
-    line-height: 28px;
+    line-height: 1.75rem;
     color: var(--paragraphGrey);
-    margin-top: 26px;
+    margin-top: 1.625rem;
 }  
 
 .intro button {
@@ -75,7 +80,7 @@ header button {
     background-position: center;
     background-repeat: no-repeat;
     background-size: 116%;
-    height: 327px;
+    height: 20.4375rem;
     width: 100%;
     margin-top: 3.5rem;
 }
@@ -92,7 +97,7 @@ header button {
 
 .topics {
     background-image: linear-gradient(180deg, #FFFFFF 0%, #F0F1FF 100%);
-    padding: 0 1rem 80px 1rem;
+    padding: 0 1rem 5rem 1rem;
     display: flex;
     flex-direction: column;
     gap: 3rem;
@@ -104,44 +109,44 @@ header button {
     background-image: linear-gradient(180deg, #FF6F48 0%, #F02AA6 100%);
     color: white;
     line-height: 2rem;
-    height: 120px;
+    height: 7.5rem;
     padding: 2rem;
-    border-radius: 10px;
+    border-radius: 0.625rem;
 }
 
 .topic__header h3 {
-    font-size: 24px; 
+    font-size: 1.5rem; 
     font-weight: 800;
 }
 
 .topic__section {
     background-color: white;
-    padding: 0 28px;
-    border-radius: 10px;
+    padding: 0 1.75rem;
+    border-radius: 0.625rem;
 }
 
 .icon {
-    height: 56px;
-    width: 56px;
+    height: 3.5rem;
+    width: 3.5rem;
     transform: translate(0, -50%);
 
 }
 
 .topic__section h4 {
     font-weight: 800;
-    font-size: 20px;
+    font-size: 1.25rem;
 }
 
 .topic__section p {
     font-size: 1rem;
-    line-height: 26px;
+    line-height: 1.625rem;
     color: var(--paragraphGrey);
     margin-top: 1rem;
 }
 
 .topic__section a {
     color: var(--anchorOrange);
-    font-size: 18px;
+    font-size: 1.125rem;
     font-weight: 800;
     display: inline-block;
     margin: 2rem 0;
@@ -178,14 +183,14 @@ footer {
     align-items: center;
     background-color: black;
     padding: 0 1rem;
-    height: 120px;
+    height: 7.5rem;
     
 }
 
 footer .skilled__logo__white {
     background-image: url(../starter-code/assets/logo-light.svg);
-    width: 89px;
-    height: 35px;
+    width: 5.5625rem;
+    height: 2.1875rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
@@ -197,7 +202,7 @@ footer button {
     
 }
 
-/* TABLET */
+/* ----------TABLET---------------- */
 
 @media (min-width: 700px) {
 
@@ -212,9 +217,13 @@ footer button {
         overflow: hidden;
     }
 
+    /* HEADER */
+
     header {
-        padding: 1rem 39px 0 39px;
+        padding: 1rem 2.4375rem 0 2.4375rem;
     }
+
+    /* INTRO */
 
     .intro__and__hero {
         display: flex;
@@ -222,18 +231,20 @@ footer button {
         position: relative;
     }
 
+    .intro {
+        margin: 6.1875rem 20rem 0 2.5rem;
+    }
+
+    /* HERO */
+
     .hero__image__mobile {
         display: none;
     }
 
-    .intro {
-        margin: 99px 20rem 0 40px;;
-    }
-
     .hero__tablet__container {
         position: absolute;
-        right: -285px;
-        top: -80px;
+        right: -17.8125rem;
+        top: -5rem;
     }
 
     .hero__image__tablet {
@@ -242,8 +253,8 @@ footer button {
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
-        height: 640px;
-        width: 640px;
+        height: 40rem;
+        width: 40rem;
     }
 
     .hero__image__desktop {
@@ -255,16 +266,16 @@ footer button {
     .topics {
         flex-direction: row;
         flex-wrap:wrap;
-        gap: 10px;
+        gap: 0.625rem;
         justify-content: center;
         margin-top: 8rem;
     }
 
     .topic__section {
-        width: 340px;
-        height: 283px;
-        margin-top: 46px;
-        box-shadow: 0px 25px 50px 0px hsla(233, 92%, 29%, 0.04);
+        width: 21.25rem;
+        height: 17.6875rem;
+        margin-top: 2.875rem;
+        box-shadow: 0rem 1.5625rem 3.125rem 0rem hsla(233, 92%, 29%, 0.04);
     }
 
     .topic__header h3 {
@@ -272,45 +283,47 @@ footer button {
     }
 }
 
-/* DESKTOP */
+/* --------------DESKTOP-------------- */
 
-@media (min-width: 1024px) {
+@media (min-width: 1025px) {
 
-    .intro {
-        margin: 99px 20rem 0 165px;
-    }
 
     header {
-        padding: 1rem 165px 0 165px;
-        margin: 16px 0 0 0;
+        padding: 1rem 10.3125rem 0 10.3125rem;
+        margin: 1rem 0 0 0;
     }
 
-    footer {
-        padding: 0 165px 0 165px;
-    }
+    /* INTRO */
 
     .intro {
-        max-width: 457px;
-        margin: 186px 20rem 0 165px;
+        max-width: 28.5625rem;
+        margin: 11.625rem 20rem 0 10.3125rem;
     }
 
     .intro h1 {
         font-weight: 800;
-        font-size: 56px;
-        line-height: 71px;
+        font-size: 3.5rem;
+        line-height: 4.4375rem;
         text-align: left;
     }
 
     .intro p {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
         color: var(--paragraphGrey);
-        margin-top: 26px;
+        margin-top: 1.625rem;
         font-weight: 500;
     }  
 
+    /* HERO */
+
     .hero__image__tablet {
         display: none;
+    }
+
+    .hero__tablet__container {
+        right: -17.25rem;
+        top: -9.75rem;
     }
 
     .hero__image__desktop {
@@ -320,40 +333,38 @@ footer button {
         background-size: contain;
         background-position: center;
         display: block;
-        height: 900px;
-        width: 900px;
+        height: 56.25rem;
+        width: 56.25rem;
     }
 
-    .hero__tablet__container {
-        right: -276px;
-        top: -156px;
-    }
+    /* TOPICS */
+
     .topics {
-        /* gap: 30px; */
-        padding: 0 165px 80px 165px;
+        padding: 0 10.3125rem 5rem 10.3125rem;
         justify-content: space-between;
     }
 
     .topic__header h3 {
-        font-size: 32px;
+        font-size: 2rem;
         font-weight: 800;
-        line-height: 40px;
+        line-height: 2.5rem;
         transform: translate(0, -25%);
     }
 
     .topic__section h4 {
         font-weight: 800;
-        font-size: 24px;
-        line-height: 30px;
+        font-size: 1.5rem;
+        line-height: 1.875rem;
     }
 
     .topic__section p {
-        font-size: 18px;
-        line-height: 28px;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
     }
 
-    
-
+    footer {
+        padding: 0 10.3125rem 0 10.3125rem;
+    }
 }
 
 
