@@ -84,6 +84,10 @@ header button {
     display: none;
 }
 
+.hero__image__desktop {
+    display: none;
+}
+
 /* TOPICS */
 
 .topics {
@@ -141,7 +145,6 @@ header button {
     font-weight: 800;
     display: inline-block;
     margin: 2rem 0;
-
 }
 
 /* TOPIC ICONS */
@@ -212,7 +215,7 @@ footer button {
     header {
         padding: 1rem 39px 0 39px;
     }
-    
+
     .intro__and__hero {
         display: flex;
         flex-direction: row;
@@ -241,7 +244,10 @@ footer button {
         display: block;
         height: 640px;
         width: 640px;
-        
+    }
+
+    .hero__image__desktop {
+        display:none;
     }
 
     /* TOPICS */
@@ -252,18 +258,102 @@ footer button {
         gap: 10px;
         justify-content: center;
         margin-top: 8rem;
-        
     }
 
     .topic__section {
         width: 340px;
         height: 283px;
         margin-top: 46px;
+        box-shadow: 0px 25px 50px 0px hsla(233, 92%, 29%, 0.04);
     }
 
     .topic__header h3 {
         transform: translate(0, -80%);
     }
+}
+
+/* DESKTOP */
+
+@media (min-width: 1024px) {
+
+    .intro {
+        margin: 99px 20rem 0 165px;
+    }
+
+    header {
+        padding: 1rem 165px 0 165px;
+        margin: 16px 0 0 0;
+    }
+
+    footer {
+        padding: 0 165px 0 165px;
+    }
+
+    .intro {
+        max-width: 457px;
+        margin: 186px 20rem 0 165px;
+    }
+
+    .intro h1 {
+        font-weight: 800;
+        font-size: 56px;
+        line-height: 71px;
+        text-align: left;
+    }
+
+    .intro p {
+        font-size: 18px;
+        line-height: 28px;
+        color: var(--paragraphGrey);
+        margin-top: 26px;
+        font-weight: 500;
+    }  
+
+    .hero__image__tablet {
+        display: none;
+    }
+
+    .hero__image__desktop {
+        background-image: url(../starter-code/assets/image-hero-desktop.png);
+        object-fit: cover;
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+        display: block;
+        height: 900px;
+        width: 900px;
+    }
+
+    .hero__tablet__container {
+        right: -276px;
+        top: -156px;
+    }
+    .topics {
+        /* gap: 30px; */
+        padding: 0 165px 80px 165px;
+        justify-content: space-between;
+    }
+
+    .topic__header h3 {
+        font-size: 32px;
+        font-weight: 800;
+        line-height: 40px;
+        transform: translate(0, -25%);
+    }
+
+    .topic__section h4 {
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 30px;
+    }
+
+    .topic__section p {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    
+
 }
 
 
