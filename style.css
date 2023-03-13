@@ -35,7 +35,7 @@ header {
 }
 
 header .skilled__logo__dark {
-    background-image: url(../starter-code/assets/logo-dark.svg);
+    background-image: url(./starter-code/assets/logo-dark.svg);
     width: 5.5625rem;
     height: 2.1875rem;
     background-position: center;
@@ -76,7 +76,7 @@ header button {
 
 
 .hero__image__mobile {
-    background-image: url("../starter-code/assets/image-hero-mobile@2x.webp");
+    background-image: url("./starter-code/assets/image-hero-mobile@2x.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 116%;
@@ -155,23 +155,23 @@ header button {
 /* TOPIC ICONS */
 
 .animation {
-    background-image: url(../starter-code/assets/icon-animation.svg);
+    background-image: url(./starter-code/assets/icon-animation.svg);
 }
 
 .design {
-    background-image: url("../starter-code/assets/icon-design.svg");
+    background-image: url("./starter-code/assets/icon-design.svg");
 }
 
 .photography {
-    background-image: url("../starter-code/assets/icon-photography.svg");
+    background-image: url("./starter-code/assets/icon-photography.svg");
 }
 
 .crypto {
-    background-image: url("../starter-code/assets/icon-crypto.svg");
+    background-image: url("./starter-code/assets/icon-crypto.svg");
 }
 
 .business {
-    background-image: url("../starter-code/assets/icon-business.svg");
+    background-image: url("./starter-code/assets/icon-business.svg");
 }
 
 /* FOOTER */
@@ -188,7 +188,7 @@ footer {
 }
 
 footer .skilled__logo__white {
-    background-image: url(../starter-code/assets/logo-light.svg);
+    background-image: url(./starter-code/assets/logo-light.svg);
     width: 5.5625rem;
     height: 2.1875rem;
     background-position: center;
@@ -248,7 +248,7 @@ footer button {
 
     .hero__image__tablet {
         object-fit: cover;
-        background-image: url("../starter-code/assets/image-hero-tablet@2x.webp");
+        background-image: url("./starter-code/assets/image-hero-tablet@2x.webp");
         background-repeat: no-repeat;
         background-size: contain;
         display: block;
@@ -326,7 +326,7 @@ footer button {
     }
 
     .hero__image__desktop {
-        background-image: url(../starter-code/assets/image-hero-desktop.png);
+        background-image: url(./starter-code/assets/image-hero-desktop.png);
         object-fit: cover;
         background-repeat: no-repeat;
         background-size: contain;
